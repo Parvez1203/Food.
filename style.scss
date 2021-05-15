@@ -1,0 +1,791 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+        transition: 0.2s ease-in-out;
+    }
+
+    .logo{
+        z-index: 8;
+    }
+
+   
+
+    .banner{
+        width: 100%;
+        min-height: 100vh;
+        background: url(images/bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+    }
+
+    .banner .content{
+        max-width: 1000px;
+        text-align: center;
+        
+    }
+
+
+
+    .banner h1{
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 5rem;
+        letter-spacing: 3px;
+    }
+
+    .banner p{
+        color: whitesmoke;
+        margin-bottom: 2em;
+    }
+
+    .banner .content .btn{
+        background: #ff0157;
+        padding: 15px 25px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .banner .content a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .banner .content .btn:hover{
+        transform: scale(1.5);
+        letter-spacing: 3px;
+
+    }
+
+    header{
+        width: 100%;
+        padding: 30px 100px;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        z-index: 10000;
+    }
+
+    header.sticky{
+        background: white;
+        padding: 10px 100px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    header.sticky .logo{
+        color: black;
+    } 
+
+    header.sticky ul li a{
+        color: black;
+        font-weight: 600;
+    } 
+
+    header ul li a:hover{
+        color: #ff0157;
+    }
+
+
+
+    header .logo{
+        color: white;
+        text-transform: capitalize;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    header .logo span{
+        color: #ff0157;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li{
+        list-style-type: none;
+        margin-right: 1.1em;
+        letter-spacing: 1px;
+    }
+
+    header ul li a{
+        color: white;
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+    }
+
+    section.about{
+        width: 100%;
+        margin-top: 60px;
+        padding: 100px;
+    
+    }
+
+
+    section.about .row{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section.about .col50{
+        width: 48%;
+    }
+
+    section.about .col50 .titleText{
+        font-size: 2.3em;
+        font-weight: 300;
+    }
+
+    section.about .col50 .titleText span{
+        font-size: 2.4em;
+        font-weight: 500;
+        color: #f01577;
+    }
+
+    section.about .col50 p{
+        font-size: 1.1em;
+        color: rgb(73, 66, 66);
+    }
+
+    .row .col50 .imgBx{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .row .col50 .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section.menu{
+        padding: 60px 100px;
+    }
+
+    section.menu .introText{
+        text-align: center;
+    }
+
+    section.menu .introText h1{
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    section.menu .introText h1 span{
+        font-size: 2.3em;
+        font-weight: 500;
+        color: #f01577;
+    }
+
+    section.menu .introText p{
+        font-size: 1.1em;
+        margin-top: -20px;
+        color: rgb(73, 66, 66);
+    }
+
+    section.menu .menuBoxes{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 30px ;
+    }
+
+    section.menu .menuBoxes .box{
+        position: relative;
+        min-width: 300px;
+        min-height: 335px;
+        margin: 30px 30px 0 0;
+        background: rgb(255, 255, 255);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.466);
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+        
+
+    }
+
+    section.menu .menuBoxes .box .imgBx{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        
+
+    }
+
+    section.menu .menuBoxes .box .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 15px 0 15px;
+    }
+
+    section.menu .menuBoxes .box .text{
+        z-index: 111;
+        color: rgb(48, 47, 47);
+        font-size: 1em;
+        font-weight: lighter;
+        position: absolute;
+        bottom: 16px;
+        left: 15px;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+
+    section.menu .menuBoxes .box .text h3{
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+
+    section.menu .menuBoxes .box:hover{
+        transform: scale(1.1);
+    }
+
+    section.experts{
+        padding: 100px;
+    }
+
+    section.experts .expertBoxes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -2em;
+        margin-left:30px ;
+
+    }
+
+    section.experts .expertBoxes .box{
+        margin-right: 30px;
+        min-width: 250px;
+        min-height: 300px;
+        background: transparent;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.466);
+        margin-top: 6em;
+        position: relative;
+        transition: 0.2s ease-in-out;
+    }
+
+
+    section.experts .expertBoxes .box .imgBx{
+        position: relative;
+        width: 100%;
+    }
+
+
+    section.experts .expertBoxes .box .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    section.experts .expertBoxes .box .text{
+         z-index: 111;
+         position: absolute;
+         left: 0;
+         bottom: -70px;
+    }
+
+    section.experts .expertBoxes .box .text h3{
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+
+    section.experts .expertBoxes .box:hover{
+        transform: scale(1.1);
+    }
+
+
+
+    section.testimonials{
+        width: 100%;
+        min-height: 650px;
+        background: url(images/bg2.jpg);
+        background-size: cover;
+    }
+
+    section.testimonials .text{
+        text-align: center;
+        padding-top: 40px;
+        color: white;
+    }
+
+    section.testimonials .text h1{
+        font-size: 3em;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    section.testimonials .text h1 span{
+        color:#f01577;
+        font-size: 66px;
+        font-weight: 700;
+    }
+
+
+    section.testimonials .text p{
+        font-weight: 100;
+        margin-top: -10px;
+        letter-spacing: 2px;
+    }
+
+    section.testimonials .cards_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+
+    }
+    
+
+    section.testimonials .cards_container .card{
+        padding: 2em 0;
+        max-width: 300px;
+        min-height: 350px;
+        background: white;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(255, 245, 245, 0.616);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s ease-in-out;
+        margin: 1em 1em 0 1em;
+    }
+
+    section.testimonials .cards_container .card .card_text p{
+        color: black;
+        font-weight: 100;
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding: 0 1em;
+        margin-bottom: 2em ;
+    }
+
+    section.testimonials .cards_container .card .imgBx{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 2em ;
+    }
+
+    section.testimonials .cards_container .card .imgBx img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section.testimonials .cards_container .card .name a{
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: #f01577;
+        font-weight: 800;
+    }
+
+    section.contact .contact_container .cards_container .card:hover{
+        transform: scale(1.1);
+    }
+
+    
+
+    section.contact  .text{
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    section.contact  .text h1{
+        font-size: 3em;
+        font-weight:100;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+
+    section.contact  .text h1 span{
+        color:#f01577;
+        font-size: 66px;
+        font-weight: 700;
+    }
+
+
+    section.contact .text p{
+        font-weight: 100;
+        margin-top: -10px;
+        letter-spacing: 2px;
+    }
+
+    section.contact{
+        background: url(images/bg3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0em -7em;
+    }
+
+    section.contact .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    section.contact .container{
+        margin: 50px 100px;
+        padding: 2em 0;
+    }
+
+    section.contact .container .contact_card{
+        width: 500px;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+        box-shadow:0 5px 20px rgba(0, 0, 0, 0.466);
+       
+    }
+    
+
+    section.contact .container .contact_card input,textarea{
+        outline: none;
+        padding: 10px;
+        border: 2px solid rgba(58, 55, 55, 0.781);
+        transition: 0.2s ease-in-out;
+        margin: 1em 0;
+    }
+
+    section.contact .container .contact_card p{
+        text-transform: capitalize;
+        font-size: 1.4em;
+    }
+
+    section.contact .container .contact_card .btn{
+        margin-top: 47px;
+    }
+    
+
+    section.contact .container .contact_card .btn a{
+        background: #f01577;
+        padding: 6px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 1px;
+        transition: 0.11s ease-in-out;
+    }
+
+    section.contact .container .contact_card .btn a:hover{
+        transform: scale(1.1);
+        letter-spacing: 2px;
+    }
+
+    section.contact .container .contact_card input:focus,
+    section.contact .container .contact_card textarea:focus{
+        transform: scale(1.1);
+        border-color: #f01577;
+    }
+
+  
+ footer{
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ footer p{
+     letter-spacing: 1px;
+     text-transform: capitalize;
+ }
+
+ footer p a{
+     text-decoration: none;
+     color: #ff0157;
+     font-weight: 700;
+ }
+ 
+
+@media screen and (max-width : 991px){
+    header {
+        padding: 20px 40px;
+    }
+
+    header.sticky{
+        padding: 10px 40px;
+    }
+
+    .banner h1{
+        font-size: 3rem;   
+    }
+
+    
+
+    .banner p {
+        margin-bottom: 3em;
+        font-size: 1em;
+        padding: 0 2em;
+    }
+    section.about {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    section.about .col50 {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    section.about .row {
+        flex-direction: column;
+    }
+
+    section.experts {
+        padding-top: 0;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header .bar{
+        position: relative;
+        width: 30px;
+        height: 23px;
+        background: url(images/menu.png);
+        background-size: cover;
+    }
+
+    header .bar.active{
+        position: relative;
+        width: 30px;
+        height: 25px;
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        
+    }
+
+    .logo.black{
+        color: black;
+    }
+
+    header.sticky .bar{
+        filter: invert(1);
+        z-index: 7;
+    }
+
+     ul.active .logo{
+        color: black !important;
+    }
+
+    header ul.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0em;
+        top: 0px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;        
+    }
+
+    header ul.active li a{
+        color: #111;
+        font-size: 1.4em;
+        font-weight: 100;
+        line-height: 2;
+        z-index: 5;
+        
+    }
+
+    
+
+}
+
+@media screen and (max-width : 450px){
+    .banner h1{
+        font-size: 2em;
+        margin-bottom:0.4em;
+    }
+
+    .banner p{
+        font-size: 0.9em;
+    }
+
+    section.contact .container {
+        margin: 20px 50px;
+        padding: 2em 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner .content .btn {
+        padding: 10px 20px;
+    }
+
+    section.about .col50 .titleText {
+        font-size: 1.5em;
+    }
+
+    section.about .col50 p {
+        font-size: 0.7em;
+    }
+
+    section.about{
+        padding: 20px 30px;
+    }
+
+    section.menu .introText h1 {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    section.menu {
+        padding: 30px 30px;
+    }
+
+    section.menu .introText p {
+        font-size: 0.8em;
+    }
+
+    section.menu .introText h1 {
+        font-size: 1.5em;
+    }
+    
+    section.menu .introText p {
+        font-size: 0.8em;
+    }
+    
+    section.experts {
+        padding: 20px 30px;
+    }
+
+    section.testimonials .text h1 {
+        font-size: 2em;
+    }
+ 
+    section.testimonials {
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    section.contact .text h1 {
+        font-size: 1.5em;
+    }
+
+    section.contact .text p {
+        font-size: 0.8em;
+    }
+
+    section.contact{
+        padding: 20px 30px;
+    }
+
+    section.contact .container .contact_card {
+    width: 100%;
+    min-width: 200px;
+    min-height: 447px;
+    }
+}
+
+header ul li.active{
+    margin-left: 0;
+}
+
+
+li.active{
+    animation: 0.4s slidein ease-in;
+}
+
+
+
+@keyframes slidein{
+    from{
+        margin-left: 100px;
+        opacity: 0;
+    }
+
+    to{
+            margin-left: 0;
+            opacity: 1;
+    }
+
+
+}
+
+
+@media screen and (max-width : 250px)
+{
+    section.menu {
+        padding: 0px 30px;
+    }
+
+    section.menu .menuBoxes {
+       margin-top: 0;
+    }
+
+    section.menu .menuBoxes .box {
+        min-width: 270px;
+        min-height: 300px;
+    }
+
+    section.menu .menuBoxes .box .text {
+        bottom: 10px;
+
+    }
+
+    section.experts .expertBoxes {
+        margin-top: -4em;
+    }
+
+    section.experts .expertBoxes .box {
+        min-width: 228px;
+        min-height: 271px;
+    }
+
+    section.testimonials .text {
+        padding-top: 0;
+    }
+
+    section.testimonials .text h1 {
+        font-size: 1.5em;
+    }
+
+    section.contact .text {
+        padding-top: 0;
+    }
+
+    section.contact .container .contact_card {
+        width: 100%;
+        min-width: 200px;
+        min-height: 447px;
+    }
+
+  
+}
+
+    
